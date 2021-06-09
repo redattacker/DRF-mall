@@ -1,0 +1,433 @@
+INFO 2021-06-04 11:12:53,765 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:18:16,903 autoreload 250 D:\CODE\mall\mall\settings\dev.py changed, reloading.
+INFO 2021-06-04 11:18:17,940 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:18:48,808 autoreload 250 D:\CODE\mall\mall\apps\order\models.py changed, reloading.
+INFO 2021-06-04 11:18:49,840 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:18:59,956 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:22:17,011 autoreload 250 D:\CODE\mall\mall\settings\dev.py changed, reloading.
+INFO 2021-06-04 11:22:17,989 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:22:27,530 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:37:59,676 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:38:45,212 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:41:03,831 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:41:32,752 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:42:35,259 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:44:25,236 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:49:11,967 autoreload 250 D:\CODE\mall\mall\apps\verifications\views.py changed, reloading.
+INFO 2021-06-04 11:49:16,872 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:50:55,615 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:52:17,206 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:52:43,417 autoreload 250 D:\CODE\mall\mall\apps\goods\views.py changed, reloading.
+INFO 2021-06-04 11:52:44,712 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:53:05,239 autoreload 250 D:\CODE\mall\mall\apps\goods\urls.py changed, reloading.
+INFO 2021-06-04 11:53:06,372 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-04 11:54:34,762 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-07 20:04:36,742 autoreload 636 Watching for file changes with StatReloader
+WARNING 2021-06-07 20:07:15,772 log 230 Not Found: /user/mobiles/188888888
+WARNING 2021-06-07 20:07:15,774 basehttp 161 "GET /user/mobiles/188888888 HTTP/1.1" 404 5691
+WARNING 2021-06-07 20:08:04,997 log 230 Not Found: /user/mobiles/188888888/count/
+WARNING 2021-06-07 20:08:04,997 basehttp 161 "GET /user/mobiles/188888888/count/ HTTP/1.1" 404 5712
+INFO 2021-06-07 20:10:57,801 autoreload 250 D:\CODE\mall\mall\urls.py changed, reloading.
+INFO 2021-06-07 20:10:58,875 autoreload 636 Watching for file changes with StatReloader
+WARNING 2021-06-07 20:11:08,430 log 230 Not Found: /user/mobiles/188888888/count/
+WARNING 2021-06-07 20:11:08,431 basehttp 161 "GET /user/mobiles/188888888/count/ HTTP/1.1" 404 4303
+INFO 2021-06-07 20:15:40,550 basehttp 161 "GET /user/user HTTP/1.1" 301 0
+ERROR 2021-06-07 20:15:45,923 log 230 Internal Server Error: /user/user/
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 336, in check_permissions
+    code=getattr(permission, 'code', None)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: 身份认证信息未提供。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\tools\python\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "D:\tools\python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'mall.utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 463, in handle_exception
+    exception_handler = self.get_exception_handler()
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 298, in get_exception_handler
+    return self.settings.EXCEPTION_HANDLER
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 225, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'mall.utils.exceptions.exception_handler' for API setting 'EXCEPTION_HANDLER'. ModuleNotFoundError: No module named 'mall.utils'.
+ERROR 2021-06-07 20:15:45,931 basehttp 161 "GET /user/user/ HTTP/1.1" 500 131906
+INFO 2021-06-07 20:17:37,752 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-07 20:17:39,653 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-07 20:17:58,565 basehttp 161 "GET /user/usernames/adddddddddddddd/count HTTP/1.1" 301 0
+INFO 2021-06-07 20:17:58,731 basehttp 161 "GET /user/usernames/adddddddddddddd/count/ HTTP/1.1" 200 40
+ERROR 2021-06-07 20:27:28,678 log 230 Internal Server Error: /user/users
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "D:\tools\python\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "D:\tools\python\lib\site-packages\django\middleware\common.py", line 95, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/user/users/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-06-07 20:27:28,692 basehttp 161 "POST /user/users HTTP/1.1" 500 69078
+ERROR 2021-06-07 20:29:03,052 log 230 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "D:\tools\python\lib\site-packages\rest_framework\serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'allow': [ErrorDetail(string='请同意协议', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\tools\python\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "D:\tools\python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'mall.utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 463, in handle_exception
+    exception_handler = self.get_exception_handler()
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 298, in get_exception_handler
+    return self.settings.EXCEPTION_HANDLER
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 225, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'mall.utils.exceptions.exception_handler' for API setting 'EXCEPTION_HANDLER'. ModuleNotFoundError: No module named 'mall.utils'.
+ERROR 2021-06-07 20:29:03,111 basehttp 161 "POST /user/users/ HTTP/1.1" 500 135910
+ERROR 2021-06-07 20:30:30,010 log 230 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "D:\tools\python\lib\site-packages\rest_framework\serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'non_field_errors': [ErrorDetail(string='验证码无效', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\tools\python\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "D:\tools\python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'mall.utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 463, in handle_exception
+    exception_handler = self.get_exception_handler()
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 298, in get_exception_handler
+    return self.settings.EXCEPTION_HANDLER
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 225, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'mall.utils.exceptions.exception_handler' for API setting 'EXCEPTION_HANDLER'. ModuleNotFoundError: No module named 'mall.utils'.
+ERROR 2021-06-07 20:30:30,059 basehttp 161 "POST /user/users/ HTTP/1.1" 500 135949
+INFO 2021-06-07 20:32:31,859 autoreload 636 Watching for file changes with StatReloader
+ERROR 2021-06-07 20:32:39,746 log 230 Internal Server Error: /user/users/
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "D:\tools\python\lib\site-packages\rest_framework\serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'non_field_errors': [ErrorDetail(string='验证码无效', code='invalid')]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 177, in import_from_string
+    return import_string(val)
+  File "D:\tools\python\lib\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "D:\tools\python\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'mall.utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 463, in handle_exception
+    exception_handler = self.get_exception_handler()
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 298, in get_exception_handler
+    return self.settings.EXCEPTION_HANDLER
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 225, in __getattr__
+    val = perform_import(val, attr)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 166, in perform_import
+    return import_from_string(val, setting_name)
+  File "D:\tools\python\lib\site-packages\rest_framework\settings.py", line 180, in import_from_string
+    raise ImportError(msg)
+ImportError: Could not import 'mall.utils.exceptions.exception_handler' for API setting 'EXCEPTION_HANDLER'. ModuleNotFoundError: No module named 'mall.utils'.
+ERROR 2021-06-07 20:32:39,761 basehttp 161 "POST /user/users/ HTTP/1.1" 500 135949
+INFO 2021-06-07 20:36:51,351 autoreload 636 Watching for file changes with StatReloader
+WARNING 2021-06-07 20:36:57,029 log 230 Bad Request: /user/users/
+WARNING 2021-06-07 20:36:57,031 basehttp 161 "POST /user/users/ HTTP/1.1" 400 40
+INFO 2021-06-08 11:05:50,206 autoreload 636 Watching for file changes with StatReloader
+ERROR 2021-06-08 11:06:11,402 log 230 Internal Server Error: /user/Redis
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "D:\tools\python\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "D:\tools\python\lib\site-packages\django\middleware\common.py", line 95, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/user/Redis/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-06-08 11:06:11,405 basehttp 161 "POST /user/Redis HTTP/1.1" 500 69075
+WARNING 2021-06-08 11:07:22,204 log 230 Method Not Allowed: /user/Redis/
+WARNING 2021-06-08 11:07:22,205 basehttp 161 "POST /user/Redis/ HTTP/1.1" 405 46
+ERROR 2021-06-08 11:07:35,507 log 230 Internal Server Error: /user/Redis/
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() missing 1 required positional argument: 'username'
+ERROR 2021-06-08 11:07:35,511 basehttp 161 "GET /user/Redis/ HTTP/1.1" 500 84556
+INFO 2021-06-08 11:07:59,925 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 11:08:00,876 autoreload 636 Watching for file changes with StatReloader
+ERROR 2021-06-08 11:08:03,889 log 230 Internal Server Error: /user/Redis/
+Traceback (most recent call last):
+  File "D:\tools\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\tools\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\tools\python\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\tools\python\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\CODE\mall\mall\apps\user\views.py", line 37, in get
+    conn.hget('kkk', 'age', 18)
+TypeError: hget() takes 3 positional arguments but 4 were given
+ERROR 2021-06-08 11:08:03,893 basehttp 161 "GET /user/Redis/ HTTP/1.1" 500 88268
+INFO 2021-06-08 11:08:38,803 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 11:08:39,726 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 11:08:43,178 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 4
+INFO 2021-06-08 14:27:49,805 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:27:52,290 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:28:19,414 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:28:21,092 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:28:53,735 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:28:54,951 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:29:14,794 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:29:16,046 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:29:35,521 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:29:37,290 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:29:53,382 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 4
+INFO 2021-06-08 14:30:04,751 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:30:06,288 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:32:28,687 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:32:29,794 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:32:35,006 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 4
+INFO 2021-06-08 14:32:44,710 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:32:45,828 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:32:52,267 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 4
+INFO 2021-06-08 14:32:59,714 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:33:01,477 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:33:11,182 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:33:13,036 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:34:30,177 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:34:31,911 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:35:20,349 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:35:21,494 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:35:53,681 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:35:55,222 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:39:06,040 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:39:07,338 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:39:15,120 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:39:16,604 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:39:55,615 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:39:57,399 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:40:11,026 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:40:12,128 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:45:53,414 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:45:57,413 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 1
+INFO 2021-06-08 14:46:12,079 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 1
+INFO 2021-06-08 14:46:18,592 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:46:20,423 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:46:22,369 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 1
+INFO 2021-06-08 14:46:40,617 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:46:41,691 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:46:45,650 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 2
+INFO 2021-06-08 14:47:08,435 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:47:10,060 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:47:18,168 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 1
+INFO 2021-06-08 14:47:26,784 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 1
+INFO 2021-06-08 14:47:49,113 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:47:50,210 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:47:54,694 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 1
+INFO 2021-06-08 14:48:32,660 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:48:33,651 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:48:38,586 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 6
+INFO 2021-06-08 14:49:59,962 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:50:01,116 autoreload 636 Watching for file changes with StatReloader
+ERROR 2021-06-08 14:50:04,286 exceptions 25 [<user.views.RedisView object at 0x05773D10>] value is not an integer or out of range
+ERROR 2021-06-08 14:50:04,288 log 230 Insufficient Storage: /user/Redis/
+ERROR 2021-06-08 14:50:04,289 basehttp 161 "GET /user/Redis/ HTTP/1.1" 507 35
+INFO 2021-06-08 14:50:22,009 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:50:23,189 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:50:28,469 basehttp 161 "GET /user/Redis/ HTTP/1.1" 200 5
+INFO 2021-06-08 14:51:01,048 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:51:02,192 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 14:51:27,366 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 14:51:28,852 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:35:40,838 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:35:50,865 autoreload 250 D:\CODE\mall\mall\apps\user\urls.py changed, reloading.
+INFO 2021-06-08 19:35:52,011 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:36:43,013 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 3
+INFO 2021-06-08 19:38:26,680 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:38:27,748 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:38:31,194 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 0
+INFO 2021-06-08 19:38:50,379 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:38:51,262 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:38:57,010 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 3
+INFO 2021-06-08 19:39:26,852 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:39:27,744 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:39:30,186 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 1
+INFO 2021-06-08 19:39:52,572 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:39:53,533 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:39:55,049 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 1
+INFO 2021-06-08 19:39:56,888 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 1
+INFO 2021-06-08 19:39:57,641 basehttp 161 "GET /user/RedisHashView/ HTTP/1.1" 200 1
+INFO 2021-06-08 19:40:04,475 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:40:05,656 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:42:36,030 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:42:38,030 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 19:43:34,868 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 19:43:36,697 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 20:59:51,305 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 20:59:52,728 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 21:00:14,253 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
+INFO 2021-06-08 21:00:15,981 autoreload 636 Watching for file changes with StatReloader
+INFO 2021-06-08 21:00:19,241 autoreload 250 D:\CODE\mall\mall\apps\user\views.py changed, reloading.
